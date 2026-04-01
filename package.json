@@ -9,7 +9,7 @@
   "scripts": {
     "dev:web": "npm run dev --workspace @hitster/web",
     "dev:server": "npm run dev --workspace @hitster/server",
-    "start": "node apps/server/dist/index.js",
+    "start": "node apps/server/dist/apps/server/src/index.js",
     "build": "npm run build --workspaces",
     "typecheck": "npm run typecheck --workspaces"
   }
