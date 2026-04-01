@@ -1,0 +1,16 @@
+{
+  "name": "hitster",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @hitster/web",
+    "dev:server": "npm run dev --workspace @hitster/server",
+    "start": "node apps/server/dist/index.js",
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}
